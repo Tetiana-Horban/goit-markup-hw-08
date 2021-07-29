@@ -1,4 +1,8 @@
 .works {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
   &__heading {
     font-size: 36px;
     line-height: 1.16;

@@ -1,16 +1,25 @@
 .site-nav {
+  @media screen and (min-width: 768px) {
   display: flex;
-  align-items: center;
+  align-items: center;  }
+
   &__list {
+    display: none;
+      @media screen and (min-width: 768px) {
     display: flex;
-  }
+      } }
   &__item {
+     @media screen and (min-width: 768px) {
     margin-right: 50px;
   }
+  }
   &__item:last-child {
+    @media screen and (min-width: 768px) {
     margin-right: 0px;
   }
+  }
   &__link {
+    @media screen and (min-width: 768px) {
     display: inline-block;
     font-weight: 500;
     font-size: 14px;
@@ -28,17 +37,31 @@
   &__link:focus {
     color: var(--accent-color);
   }
+  }
 }
 .site-info {
-  display: flex;
-  margin-left: auto;
+  display: none;
+   @media screen and (min-width: 768px) {
+      display: block;
+      margin-left: auto;
+    }
+   @media screen and (min-width: 1200px) {
+    display: flex;}
   &__item {
+     @media screen and (min-width: 768px) and (max-width:1200) {
+       margin-bottom: 10px;
+     }
+     @media screen and (min-width: 1200px) {
     margin-right: 50px;
+    }
   }
   &__item:last-child {
-    margin-right: 0px;
+     @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
   }
   &__link {
+    @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
 
@@ -50,13 +73,18 @@
     color: var(--primary-text-color);
 
     transition: color var(--transition);
+    }
   }
   &__link:hover,
   &__link:focus {
+    @media screen and (min-width: 768px) {
     color: var(--accent-color);
   }
+  }
   &__icon {
+    @media screen and (min-width: 768px) {
     fill: currentColor;
     margin-right: 10px;
   }
-}
+  }
+   }
