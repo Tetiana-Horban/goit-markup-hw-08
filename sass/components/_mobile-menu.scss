@@ -1,13 +1,119 @@
-.mob-button-open {
+.mob {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+.mob.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.mob-button-open,
+.mob-button-close {
+    padding: 0;
+    background-color: var(--white-color);
+    border: none;
 @media screen and (min-width: 768px) {
     display: none;
 }
-    // .mob-button-close {
-    @media screen and (max-width: 768px) {
-        background-color: unset;
-        border: none;
-        padding: 0;
-        line-height: 0;
+}
+.mob-button-close:hover,
+.mob-button-close:focus,
+.mob-button-open:hover,
+.mob-button-open:focus {
+    fill: var(--accent-color);
+}
+.mob-button-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.mob {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white-color);
+    top: 0;
+    left: 0;
+    z-index: 999;
+    &--container {
+        padding: 48px 40px;
     }
 }
-
+.mob-menu {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    margin-bottom: 300px;
+    &__link {
+        color: inherit;
+        transition: var(--transition);
+    }
+    &__item {
+        margin-bottom: 35px;
+        &:not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+}
+.mob-menu__link:hover,
+.mob-menu__link:focus {
+    color: var(--accent-color);
+}
+.mob-info {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    margin-bottom: 64px;
+    &__link {
+        color: inherit;
+        transition: var(--transition);
+        &:focus,
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+    &__item {
+        margin-bottom: 32px;
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+}
+.mob-info__link:hover,
+.mob-info__link:hover {
+    color: var(--accent-color);
+}
+.mob-social {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    max-width: 360px;
+    margin-left: -5px;
+    &__link {
+        color: inherit;
+}
+    &__item {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+.mob-social__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 22px;
+    height: 0px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+}

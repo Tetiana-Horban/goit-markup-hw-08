@@ -32,8 +32,7 @@
           <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
         </ul>
       </nav>
-      <button type="button" class="mob-button-open" aria-expanded="false"
-    aria-controls="mob">
+      <button type="button" class="mob-button-open" data-menu-open aria-expanded="false">
         <svg class="mob-button-open__icon" width="40" height="40">
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
@@ -55,19 +54,19 @@
       </ul>
 
     </div>
-    <!-- <div class="mob">
+    <div class="mob" data-menu>
       <div class="container mob--container">
-      <button type="button" class="mob-button-close">
+      <button type="button" class="mob-button-close" data-menu-close>
         <svg class="mob-button-close__icon" width="40" height="40">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
         <ul class="mob-menu list">
           <li class="mob-menu__item">
-            <a href="" class="mob-menu__link link">Студия</a>
+            <a href="./index.html" class="mob-menu__link link">Студия</a>
           </li>
           <li class="mob-menu__item">
-            <a href="" class="mob-menu__link link">Портфолио</a>
+            <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
           </li>
           <li class="mob-menu__item">
             <a href="" class="mob-menu__link link">Контакты</a>
@@ -75,10 +74,10 @@
         </ul>
         <ul class="mob-info list">
           <li class="mob-info__item">
-            <a href="" class="mob-info__link link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="mob-info__link link">+38 096 111 11 11</a>
           </li>
           <li class="mob-info__item">
-            <a href="" class="mob-info__link link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="mob-info__link link">info@devstudio.com</a>
           </li>
         </ul>
         <ul class="mob-social list">
@@ -96,7 +95,7 @@
           </li>
         </ul>
     </div>
-    </div> -->
+    </div>
   </header>
     <main>
       <!--Герой-->
@@ -167,15 +166,30 @@
         <h2 class="works__heading">Чем мы занимаемся</h2>
         <ul class="works__list list">
           <li class="works__item">
-            <img src="./images/studio/what-are-we-doing-2.jpg" alt="работа за компьютером" width="370" height="294" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/studio/img.jpg 1x, ./images/studio/img@2x.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="./images/studio/img.webp 1x, ./images/studio/img@2x.webp 2x"
+                type="image/webp">
+            <img src="#" alt="работа за компьютером" />
+            </picture>
             <p class="works__text">Десктопные приложения</p>
           </li>
           <li class="works__item">
-            <img src="./images/studio/what-are-we-doing.jpg" alt="работа за компьютером" width="370" height="294" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/studio/img-1.jpg 1x, ./images/studio/img-1@2x.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="./images/studio/img-1.webp 1x, ./images/studio/img-1@2x.webp 2x"
+                type="image/webp">
+              <img src="#" alt="работа за компьютером" />
+            </picture>
             <p class="works__text">Мобильные приложения</p>
           </li>
           <li class="works__item">
-            <img src="./images/studio/what-are-we-doing-3.jpg" alt="работа за планшетом" width="370" height="294" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/studio/img-2.jpg 1x, ./images/studio/img-2@2x.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="./images/studio/img-2.webp 1x, ./images/studio/img-2@2x.webp 2x"
+                type="image/webp">
+              <img src="#" alt="работа за компьютером" />
+            </picture>
             <p class="works__text">Дизайнерские решения</p>
           </li>
         </ul>
@@ -194,8 +208,8 @@
               <source media="(min-width: 768px)" srcset="./images/tablet/team1.webp 1x, ./images/tablet/team1@2x.webp 2x" type="image/webp">
               <source media="(min-width: 320px)" srcset="./images/mobile/team1.jpg 1x, ./images/mobile/team1@2x.jpg 2x">
               <source media="(min-width: 320px)" srcset="./images/mobile/team1.webp 1x, ./images/mobile/team1@2x.webp 2x" type="image/webp">
-            <img srcset="./images/mobile/team1.jpg 1x, ./images/mobile/team1@2x.jpg 2x" 
-            src="./images/mobile/team1.jpg" 
+            <img  
+            src="#" 
             alt="фото мужчины"/>
             </picture>
             <div class="member">
@@ -236,7 +250,7 @@
               <source media="(min-width: 320px)" srcset="./images/mobile/team2.jpg 1x, ./images/mobile/team2@2x.jpg 2x">
               <source media="(min-width: 320px)" srcset="./images/mobile/team2.webp 1x, ./images/mobile/team2@2x.webp 2x"
                 type="image/webp">
-              <img srcset="./images/mobile/team2.jpg 1x, ./images/mobile/team2@2x.jpg 2x" src="./images/mobile/team2.jpg"
+              <img src="#"
                 alt="фото девушки" />
             </picture>
             <div class="member">
@@ -277,7 +291,7 @@
               <source media="(min-width: 320px)" srcset="./images/mobile/team3.jpg 1x, ./images/mobile/team3@2x.jpg 2x">
               <source media="(min-width: 320px)" srcset="./images/mobile/team3.webp 1x, ./images/mobile/team3@2x.webp 2x"
                 type="image/webp">
-              <img srcset="./images/mobile/team3.jpg 1x, ./images/mobile/team3@2x.jpg 2x" src="./images/mobile/team3.jpg"
+              <img src="#"
                 alt="фото мужчины" />
             </picture>
             <div class="member">
@@ -318,7 +332,7 @@
               <source media="(min-width: 320px)" srcset="./images/mobile/team4.jpg 1x, ./images/mobile/team4@2x.jpg 2x">
               <source media="(min-width: 320px)" srcset="./images/mobile/team4.webp 1x, ./images/mobile/team4@2x.webp 2x"
                 type="image/webp">
-              <img srcset="./images/mobile/team4.jpg 1x, ./images/mobile/team4@2x.jpg 2x" src="./images/mobile/team4.jpg"
+              <img src="#"
                 alt="фото мужчины" />
             </picture>
             <div class="member">
@@ -453,7 +467,7 @@
       </div>
   </footer>
     <!-- Backdrop Modal -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn" type="button" data-modal-close>
           <svg width="11" height="11">
@@ -519,9 +533,8 @@
           <button type="submit" class="modal-form__btn">Отправить</button>
         </form>
       </div>
-    </div> -->
-    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"></script>
-  </body>
+    </div>
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
+</body>
 </html>
