@@ -1192,7 +1192,7 @@ body {
   display: flex;
   justify-content: space-between;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -1206,6 +1206,7 @@ body {
 .mob-social__link {
   color: inherit;
 }
+
 .mob-social__item:not(:last-child)::after {
   content: "";
   margin-left: 10px;

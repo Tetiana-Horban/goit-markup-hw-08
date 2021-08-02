@@ -94,7 +94,7 @@
     display: flex;
     justify-content: space-between;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 12px;
     @media screen and (min-width: 480px) {
     font-size: 18px;    }
     line-height: 1.2;
@@ -104,10 +104,6 @@
     &__link {
         color: inherit;
 }
-    &__item:not(:last-child) {
-        // display: inline-block;
-        // margin-right: 10px;  
-    }
 }
 .mob-social__item:not(:last-child)::after {
     content: "";
