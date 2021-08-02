@@ -3,9 +3,14 @@
   top: 50%;
   left: 50%;
 
+  min-width: 320px;
+  max-width: 450px;
+  @media screen and (min-width: 1200Px) {
+    max-width: 528px;
+  }
+  width: 100%;
+
   padding: 40px;
-  width: 528px;
-  height: 581px;
 
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

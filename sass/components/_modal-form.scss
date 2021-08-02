@@ -1,10 +1,9 @@
 .modal-form {
-  display: flex;
-  flex-direction: column;
   &__title {
+    display: block;
+    text-align: center;
     font-size: 20px;
     line-height: 1.15;
-
     margin-bottom: 12px;
 
     color: var(--title-color);

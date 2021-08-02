@@ -9,6 +9,7 @@
 .footer-box {
   @media screen and (min-width: 1200px) {
   display: flex;
+  align-items: baseline;
   }
 }
 .footer-address {
@@ -111,5 +112,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    align-items: baseline;
   }
 }
