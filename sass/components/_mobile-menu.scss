@@ -39,7 +39,9 @@
     left: 0;
     z-index: 999;
     &--container {
-        padding: 48px 40px;
+        padding-top: 48px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 .mob-menu {
@@ -94,6 +96,7 @@
     display: flex;
     font-weight: 500;
     font-size: 12px;
+
     @media screen and (min-width: 480px) {
     font-size: 18px;    }
     line-height: 1.2;
@@ -117,4 +120,5 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding-bottom: 48px;
 }

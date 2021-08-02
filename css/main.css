@@ -1135,7 +1135,9 @@ body {
   z-index: 999;
 }
 .mob--container {
-  padding: 48px 40px;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .mob-menu {
@@ -1220,6 +1222,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding-bottom: 48px;
 }
 
 :root {
