@@ -2,14 +2,15 @@
   text-align: center;
   align-items: center;
   max-width: 1600px;
+  background-size: cover;
 
   background-color: var(--accent-background);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url(/images/mobile/bg-main.jpg);
   
-     @media (min-device-pixel-ratio: 2),
-   (-webkit-min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
+    @media (min-device-pixel-ratio: 2) and (min-width: 320px),
+   (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+   (min-resolution: 192dpi) and (min-width: 320px),
    (min-resolution: 2dppx) and (min-width: 320px) {
      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
        url(/images/mobile/bg-main@2x.jpg);
@@ -18,20 +19,20 @@
        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url(/images/tablet/bg-main.jpg);
   }
-   @media screen and (min-width: 1200px) {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/deckstope/bg-main.jpg);
-   }
-   @media (min-device-pixel-ratio: 2), 
-   (-webkit-min-device-pixel-ratio: 2), 
-   (min-resolution: 192dpi),
+   @media (min-device-pixel-ratio: 2)and (min-width: 768px), 
+   (-webkit-min-device-pixel-ratio: 2)and (min-width: 768px), 
+   (min-resolution: 192dpi)and (min-width: 768px),
    (min-resolution: 2dppx) and (min-width: 768px) {
            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
        url(/images/tablet/bg-main@2x.jpg); 
    }
-      @media (min-device-pixel-ratio: 2),
-   (-webkit-min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
+   @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/deckstope/bg-main.jpg);
+     }
+        @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+   (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+   (min-resolution: 192dpi) and (min-width: 1200px),
    (min-resolution: 2dppx) and (min-width: 1200px) {
      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
        url(/images/deckstope/bg-main@2x.jpg);

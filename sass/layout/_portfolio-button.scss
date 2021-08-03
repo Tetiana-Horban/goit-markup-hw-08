@@ -1,16 +1,20 @@
 .filter {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
+
     @media screen and (min-width: 768px) {
       flex-wrap: nowrap;
       justify-content: center;
       margin-bottom: 30px;}
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 50px;}
-  margin-bottom: 40px;
   &__item {
     margin-right: 8px;
-    margin-bottom: 15px;
+    &:nth-child(-n+3) {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 15px;
+    }}
      }
   &__item:last-child {
     margin-right: 0;
